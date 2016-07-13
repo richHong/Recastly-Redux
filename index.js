@@ -1,12 +1,5 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import App from './public/src/components/App';
 
-class HelloWorld extends Component {
-  render() {
-    return (
-      <div>Hello World!</div>
-    )
-  }
-}
-
-render(<HelloWorld/>, document.getElementById('app'))
+render(<App />, document.getElementById('app'))
