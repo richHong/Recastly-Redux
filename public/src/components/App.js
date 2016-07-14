@@ -14,6 +14,7 @@ class App extends React.Component {
       videos: exampleVideoData
     };
     this.searchVideos = this.searchVideos.bind(this);
+    this.addVideo = this.addVideo.bind(this);
   }
   addVideo(e, video){
     this.setState({ video:video });
@@ -44,7 +45,7 @@ class App extends React.Component {
           <VideoPlayer video={ this.state.video }/>
         </div>
         <div className="col-md-5">
-          <VideoList videos={ this.state.videos } addVideo={ this.addVideo.bind(this) }/>
+          <VideoList videos={ this.state.videos } addVideo={ this.addVideo }/>
         </div>
       </div>
     )}
