@@ -20,7 +20,6 @@ class App extends React.Component {
     this.setState({ video:video });
   }
   searchVideos(e, input){
-
     e.preventDefault();
     
     this.searchYouTube({
