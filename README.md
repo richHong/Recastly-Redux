@@ -6,8 +6,6 @@ Required credentials for YouTube search:
 
 - [ ] YouTube API Key [YouTube Data API](https://developers.google.com/youtube/v3/?hl=en)
 
-# Refactor Re.castly Sprint with Redux
-
 Install this sprint's dependencies:
 
 - [ ] Run `npm install`
