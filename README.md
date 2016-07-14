@@ -18,13 +18,13 @@ To run the server:
 
 Todos:
 
-- [ ] Create a videoReducer function
+- [ ] Create a reducer function
 - [ ] Create a store from your reducer function
-- [ ] Use the Provider component to connect your store
+- [ ] Use the Provider component to connect your store to App
 - [ ] Set exampleVideoData to be default state in reducer
 - [ ] Refactor App component and connect to store with mapStateToProps
 - [ ] Refactor Search component and connect to store 
 - [ ] Refactor VideoListEntry component and connect to store
-- [ ] Create action creator for addVideo
-- [ ] Create action creator for youTubeSearch
+- [ ] Create action creator to add a single video to store
+- [ ] Create action creator to add videos from YouTube search to store
 - [ ] Add event handlers to dispatch action creators
