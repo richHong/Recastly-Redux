@@ -31,7 +31,7 @@ class App extends React.Component {
       maxResults: 5
     }, data => {
       this.setState({ videos:data.items });
-    }.bind(this));
+    });
   }
   searchYouTube(options, callback){
     $.get('https://www.googleapis.com/youtube/v3/search', options, callback);
