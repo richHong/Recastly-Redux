@@ -15,7 +15,7 @@ class App extends React.Component {
     };
   }
   addVideo(e, video){
-    this.setState({video:video});
+    this.setState({ video:video });
   }
   searchVideos(e, input){
     e.preventDefault();
@@ -27,7 +27,7 @@ class App extends React.Component {
       q: input,
       maxResults: 5
     }, function(data){
-      this.setState({videos:data.items});
+      this.setState({ videos:data.items });
     }.bind(this));
   }
   searchYouTube(options, callback){
