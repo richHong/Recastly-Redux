@@ -33,7 +33,7 @@ class App extends React.Component {
       maxResults: 5
     }, data => {
       this.setState({ videos:data.items });
-    }.bind(this));
+    });
   }
 
   searchYouTube(options, callback){
