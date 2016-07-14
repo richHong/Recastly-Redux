@@ -2,7 +2,9 @@
 
 ![Recast.ly demo](https://cloud.githubusercontent.com/assets/6980359/12561585/d24594a8-c355-11e5-9aa9-adb6e2c40a40.gif "Recast.ly demo")
 
-[YouTube Data API](https://developers.google.com/youtube/v3/?hl=en))
+Required credentials for YouTube search:
+
+- [ ] YouTube API Key [YouTube Data API](https://developers.google.com/youtube/v3/?hl=en)
 
 # Refactor Re.castly Sprint with Redux
 
