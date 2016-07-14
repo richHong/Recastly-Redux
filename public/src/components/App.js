@@ -36,12 +36,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav search={this.searchVideos.bind(this)}/>
+        <Nav search={ this.searchVideos.bind(this) }/>
         <div className="col-md-7">
-          <VideoPlayer video={this.state.video}/>
+          <VideoPlayer video={ this.state.video }/>
         </div>
         <div className="col-md-5">
-          <VideoList videos={this.state.videos} addVideo={this.addVideo.bind(this)}/>
+          <VideoList videos={ this.state.videos } addVideo={ this.addVideo.bind(this) }/>
         </div>
       </div>
     )}
