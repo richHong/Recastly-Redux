@@ -13,12 +13,15 @@ class App extends React.Component {
       video: exampleVideoData[0],
       videos: exampleVideoData
     };
+    this.searchVideos = this.searchVideos.bind(this);
   }
   addVideo(e, video){
-    this.setState({video:video});
+    this.setState({ video:video });
   }
   searchVideos(e, input){
+
     e.preventDefault();
+    
     this.searchYouTube({
       part:'snippet',
       type:'video',
@@ -26,8 +29,8 @@ class App extends React.Component {
       key: YOUTUBE_API_KEY,
       q: input,
       maxResults: 5
-    }, function(data){
-      this.setState({videos:data.items});
+    }, data => {
+      this.setState({ videos:data.items });
     }.bind(this));
   }
   searchYouTube(options, callback){
@@ -36,12 +39,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav search={this.searchVideos.bind(this)}/>
+        <Nav search={ this.searchVideos }/>
         <div className="col-md-7">
-          <VideoPlayer video={this.state.video}/>
+          <VideoPlayer video={ this.state.video }/>
         </div>
         <div className="col-md-5">
-          <VideoList videos={this.state.videos} addVideo={this.addVideo.bind(this)}/>
+          <VideoList videos={ this.state.videos } addVideo={ this.addVideo.bind(this) }/>
         </div>
       </div>
     )}
