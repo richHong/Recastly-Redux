@@ -6,7 +6,8 @@ Demo:
 
 Required credentials for YouTube search:
 
-- [ ] YouTube API Key [YouTube Data API](https://developers.google.com/youtube/v3/?hl=en)
+- [ ] YouTube API Key. Get here [YouTube Data API](https://developers.google.com/youtube/v3/?hl=en)
+- [ ] Rename config.example.js to config.js and insert API Key into file
 
 Install this sprint's dependencies:
 
