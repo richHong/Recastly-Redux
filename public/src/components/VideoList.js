@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import VideoListEntry from './videoListEntry';
 
-const VideoList = ({videos, addVideo}) => (
+const VideoList = ({videos}) => (
   <div className="video-list media">
-    {videos.map((video,i) => <VideoListEntry key={ i } video={ video } addVideo={ addVideo }/>)}
+    {videos.map((video,i) => <VideoListEntry key={ i } video={ video } />)}
   </div>
 );
 

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Search from './search';
 
-const Nav = ({ search }) => (
+const Nav = () => (
   <nav className="navbar">
     <div className="col-md-6 col-md-offset-3">
-      <Search search={ search }/>
+      <Search/>
     </div>
   </nav>
 );
